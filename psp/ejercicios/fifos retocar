@@ -1,0 +1,20 @@
+mknod("FIFO1,S_IFIFO|0660,0);
+while(TRUE)
+{
+fp=open("FIFO1",0_RDONLY);
+nbytes=read(fp,buffer,TAM_BUF-1);
+buffer[nbytes]='\0';
+printf("cadena recibida:%s\n",buffer);
+close(fp);
+}
+int main()
+{
+int fp;
+char saludo[]="Un saludo!!!";
+fp=open("FIFO1",1);
+if(fp==-1)
+{
+printf("ERROR AL ABRIR ARCHIVO\n");
+write(fp,saludo,strlen(saludo));
+close(fp);
+

@@ -1,0 +1,12 @@
+Tenemos los siguientes procesos :p1(5 cpu),p2(2cpu),p3(4 cpu),p4(2 cpu),p5(3 cpu)
+En instante 0 llega p1
+en instante 1 llega p3 y p5
+en isntante 2 llegan p2 y p4
+
+A  realiza la planificacion sin desalojo
+
+B  realiza la planificacion con tiempo compartido  de 3 .
+				(imagino sera el de saltos y colas)
+
+C realiza la planificacion apropiativa segun las prioridades(p1(prioridad  5) p2(prioridad 2)p3						(prioridad3)p4				(prioridad2)p5		(prioridad1)
+menor numero mayor prioridad ej: 1>2

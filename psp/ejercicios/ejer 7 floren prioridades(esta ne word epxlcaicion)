@@ -1,0 +1,20 @@
+tenemos los sigueintes procesos para ejecutarse :
+p1--> llega en instante 0 y tiene 4 tiempos de cpu, prioridad 1
+p2 llega en instante 2 necesita para ejcutarse 3 de cpu , prioridad 2.
+p3 llega en el instante 2 tiene 4 tiempos de cpu y tiene prioridad 3.
+p4 llega en el instante 3 tiene 3 tiempos de cpu y prioridad 1.
+
+prioridad es amenor numero de prioridad tiene mayor prioridad 1>2 por ejemplo .
+
+Realiza la planificacion de la cpu mediante :
+a :algoritmo sin desalojo, planificacion sin desalojo
+b:por planificacion apropiativa
+c:tiempo compartido de 2 y conlficto amisma prioridad mas pornto llega entra
+
+
+
+A p1 ,p2,p3,p4
+
+B p1,p4,p2,p3
+
+C p1,p2,p1,p2,p3,p4,p3,p4

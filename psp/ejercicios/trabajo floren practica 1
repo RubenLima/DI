@@ -1,0 +1,294 @@
+
+Entregar en pdf.
+
+1.
+mati@PCI4-04:~$ ps
+  PID TTY          TIME CMD
+ 4091 pts/3    00:00:00 bash
+ 4160 pts/3    00:00:00 ps
+mati@PCI4-04:~$ 
+
+2.
+mati@PCI4-04:~$ ps axu
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  33912  3204 ?        Ss   08:53   0:00 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    08:53   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    08:53   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   08:53   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    08:53   0:00 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    08:53   0:00 [rcuos/0]
+root         9  0.0  0.0      0     0 ?        S    08:53   0:00 [rcuos/1]
+root        10  0.0  0.0      0     0 ?        S    08:53   0:00 [rcu_bh]
+root        11  0.0  0.0      0     0 ?        S    08:53   0:00 [rcuob/0]
+root        12  0.0  0.0      0     0 ?        S    08:53   0:00 [rcuob/1]
+root        13  0.0  0.0      0     0 ?        S    08:53   0:00 [migration/0]
+root        14  0.0  0.0      0     0 ?        S    08:53   0:00 [watchdog/0]
+root        15  0.0  0.0      0     0 ?        S    08:53   0:00 [watchdog/1]
+root        16  0.0  0.0      0     0 ?        S    08:53   0:00 [migration/1]
+root        17  0.0  0.0      0     0 ?        S    08:53   0:00 [ksoftirqd/1]
+root        19  0.0  0.0      0     0 ?        S<   08:53   0:00 [kworker/1:0H]
+root        20  0.0  0.0      0     0 ?        S<   08:53   0:00 [khelper]
+root        21  0.0  0.0      0     0 ?        S    08:53   0:00 [kdevtmpfs]
+root        22  0.0  0.0      0     0 ?        S<   08:53   0:00 [netns]
+root        23  0.0  0.0      0     0 ?        S<   08:53   0:00 [writeback]
+root        24  0.0  0.0      0     0 ?        S<   08:53   0:00 [kintegrityd]
+root        25  0.0  0.0      0     0 ?        S<   08:53   0:00 [bioset]
+root        26  0.0  0.0      0     0 ?        S<   08:53   0:00 [kworker/u5:0]
+root        27  0.0  0.0      0     0 ?        S<   08:53   0:00 [kblockd]
+root        28  0.0  0.0      0     0 ?        S<   08:53   0:00 [ata_sff]
+root        29  0.0  0.0      0     0 ?        S    08:53   0:00 [khubd]
+root        30  0.0  0.0      0     0 ?        S<   08:53   0:00 [md]
+root        31  0.0  0.0      0     0 ?        S<   08:53   0:00 [devfreq_wq]
+root        32  0.0  0.0      0     0 ?        S    08:53   0:00 [kworker/0:1]
+root        34  0.0  0.0      0     0 ?        S    08:53   0:00 [khungtaskd]
+root        35  0.0  0.0      0     0 ?        S    08:53   0:00 [kswapd0]
+root        36  0.0  0.0      0     0 ?        SN   08:53   0:00 [ksmd]
+root        37  0.0  0.0      0     0 ?        SN   08:53   0:00 [khugepaged]
+root        38  0.0  0.0      0     0 ?        S    08:53   0:00 [fsnotify_mark]
+root        39  0.0  0.0      0     0 ?        S    08:53   0:00 [ecryptfs-kthre
+root        40  0.0  0.0      0     0 ?        S<   08:53   0:00 [crypto]
+root        52  0.0  0.0      0     0 ?        S<   08:53   0:00 [kthrotld]
+root        54  0.0  0.0      0     0 ?        S    08:53   0:01 [kworker/1:1]
+root        73  0.0  0.0      0     0 ?        S<   08:53   0:00 [deferwq]
+root        74  0.0  0.0      0     0 ?        S<   08:53   0:00 [charger_manage
+root       119  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_0]
+root       120  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_1]
+root       121  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_2]
+root       122  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_3]
+root       123  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_4]
+root       124  0.0  0.0      0     0 ?        S    08:53   0:00 [scsi_eh_5]
+root       134  0.0  0.0      0     0 ?        S<   08:53   0:00 [kpsmoused]
+root       135  0.0  0.0      0     0 ?        S    08:53   0:01 [kworker/0:3]
+root       148  0.0  0.0      0     0 ?        S    08:53   0:00 [jbd2/sda1-8]
+root       149  0.0  0.0      0     0 ?        S<   08:53   0:00 [ext4-rsv-conve
+root       277  0.0  0.0  19476   648 ?        S    08:53   0:00 upstart-udev-br
+root       286  0.0  0.0  51788  1952 ?        Ss   08:53   0:00 /lib/systemd/sy
+root       349  0.0  0.0      0     0 ?        S<   08:53   0:00 [kworker/u5:1]
+root       373  0.0  0.0      0     0 ?        S<   08:53   0:00 [kvm-irqfd-clea
+root       442  0.0  0.0  15260   632 ?        S    08:53   0:00 upstart-socket-
+root       500  0.0  0.0      0     0 ?        S<   08:53   0:00 [hd-audio0]
+root       592  0.0  0.0      0     0 ?        S    08:53   0:00 [jbd2/sda5-8]
+root       593  0.0  0.0      0     0 ?        S<   08:53   0:00 [ext4-rsv-conve
+message+   678  0.0  0.0  40332  2560 ?        Ss   08:53   0:00 dbus-daemon --s
+root       728  0.0  0.0 330236  4412 ?        Ssl  08:53   0:00 /usr/sbin/Modem
+syslog     730  0.0  0.0 255844  1580 ?        Ssl  08:53   0:00 rsyslogd
+root       731  0.0  0.0  19292  1464 ?        Ss   08:53   0:00 /usr/sbin/bluet
+root       747  0.0  0.0      0     0 ?        S<   08:53   0:00 [krfcommd]
+root       751  0.0  0.0  15408   716 ?        S    08:53   0:00 upstart-file-br
+root       856  0.0  0.0  43524  1924 ?        Ss   08:53   0:00 /lib/systemd/sy
+avahi      860  0.0  0.0  32348  1632 ?        S    08:53   0:00 avahi-daemon: r
+avahi      861  0.0  0.0  32224   464 ?        S    08:53   0:00 avahi-daemon: c
+root       918  0.0  0.0  20064   960 tty4     Ss+  08:53   0:00 /sbin/getty -8 
+root       920  0.0  0.0 356968  7036 ?        Ssl  08:53   0:00 NetworkManager
+root       923  0.0  0.0  20064   968 tty5     Ss+  08:53   0:00 /sbin/getty -8 
+root       930  0.0  0.0  20064   964 tty2     Ss+  08:53   0:00 /sbin/getty -8 
+root       931  0.0  0.0  20064   960 tty3     Ss+  08:53   0:00 /sbin/getty -8 
+root       935  0.0  0.0  20064   960 tty6     Ss+  08:53   0:00 /sbin/getty -8 
+root       984  0.0  0.0  61364  3072 ?        Ss   08:53   0:00 /usr/sbin/sshd 
+kernoops   999  0.0  0.0  37144  1008 ?        Ss   08:53   0:00 /usr/sbin/kerne
+root      1005  0.0  0.0   4368   692 ?        Ss   08:53   0:00 acpid -c /etc/a
+root      1024  0.0  0.0  23656  1020 ?        Ss   08:53   0:00 cron
+root      1025  0.0  0.0  75352  3640 ?        Ss   08:53   0:00 /usr/sbin/cups-
+root      1029  0.0  0.0  19188   700 ?        Ss   08:53   0:00 /usr/sbin/irqba
+root      1032  0.0  0.0 292640  4560 ?        SLsl 08:53   0:00 lightdm
+root      1059  0.0  0.1 303156  8120 ?        Sl   08:53   0:00 /usr/lib/policy
+root      1060  0.7  0.7 366916 58228 tty7     Ssl+ 08:53   1:20 /usr/bin/X -cor
+mysql     1067  0.0  0.6 550168 50944 ?        Ssl  08:53   0:03 /usr/sbin/mysql
+root      1078  0.0  0.0      0     0 ?        S<   08:53   0:00 [iprt]
+root      1086  0.0  0.0 302232  5072 ?        Sl   08:53   0:00 /usr/lib/accoun
+root      1169  0.0  0.0  20064   964 tty1     Ss+  08:53   0:00 /sbin/getty -8 
+whoopsie  1176  0.0  0.0 363388  5344 ?        Ssl  08:53   0:00 whoopsie
+root      1234  0.0  0.0      0     0 ?        S    08:53   0:00 [kauditd]
+root      1350  0.0  0.0 239376  4584 ?        Sl   08:53   0:00 /usr/lib/upower
+rtkit     1425  0.0  0.0 168916  1324 ?        SNl  08:53   0:00 /usr/lib/rtkit/
+nobody    1748  0.0  0.0  35332  1608 ?        S    08:53   0:00 /usr/sbin/dnsma
+root      1885  0.0  0.0 172556  3884 ?        Sl   08:53   0:00 lightdm --sessi
+mati      1915  0.0  0.0 396848  7464 ?        Sl   08:53   0:00 /usr/bin/gnome-
+mati      1917  0.0  0.0  40424  2720 ?        Ss   08:53   0:00 init --user
+mati      1988  0.0  0.0  41420  2864 ?        Ss   08:53   0:00 dbus-daemon --f
+mati      1991  0.0  0.0  10616   316 ?        Ss   08:53   0:00 ssh-agent -s
+mati      1998  0.0  0.0  22384  1156 ?        Ss   08:53   0:00 upstart-event-b
+mati      2001  0.0  0.0  78248  4624 ?        Ss   08:53   0:00 /usr/lib/x86_64
+mati      2015  0.0  0.0 377840  6500 ?        Ssl  08:53   0:07 /usr/bin/ibus-d
+mati      2030  0.0  0.2 750252 21380 ?        Ssl  08:53   0:00 /usr/lib/unity-
+mati      2034  0.0  0.3 720064 29692 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2037  0.0  0.0 367688  6536 ?        Ssl  08:53   0:00 /usr/lib/at-spi
+mati      2038  0.0  0.1 660468 14924 ?        Ssl  08:53   0:00 gnome-session -
+mati      2043  0.0  0.3 527540 27572 ?        Ssl  08:53   0:01 /usr/lib/unity/
+mati      2044  0.0  0.0  39380  2088 ?        S    08:53   0:00 /bin/dbus-daemo
+mati      2060  0.0  0.0 124912  3332 ?        Sl   08:53   0:00 /usr/lib/at-spi
+mati      2068  0.0  0.0 196864  3312 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2072  0.0  0.0 360428  5984 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2094  0.0  0.1 566672 15960 ?        Sl   08:53   0:00 /usr/lib/x86_64
+colord    2101  0.0  0.1 311000  8404 ?        Sl   08:53   0:00 /usr/lib/colord
+mati      2110  0.0  0.0 374044  6428 ?        S<l  08:53   0:00 /usr/bin/pulsea
+mati      2114  0.0  0.0 296100  4472 ?        Sl   08:53   0:00 /usr/lib/ibus/i
+mati      2115  0.0  0.2 493920 16432 ?        Sl   08:53   0:01 /usr/lib/ibus/i
+mati      2118  0.0  0.1 397076  8584 ?        Sl   08:53   0:00 /usr/lib/ibus/i
+mati      2128  0.0  0.0 220248  4304 ?        Sl   08:53   0:02 /usr/lib/ibus/i
+mati      2143  0.0  0.0  31020   952 ?        S    08:53   0:00 upstart-file-br
+mati      2145  0.0  0.0  22392   664 ?        S    08:53   0:00 upstart-dbus-br
+mati      2147  0.0  0.0  22504   716 ?        S    08:53   0:00 upstart-dbus-br
+mati      2149  0.0  0.2 536148 16384 ?        Sl   08:53   0:00 /usr/lib/x86_64
+mati      2158  0.0  0.0 365520  6240 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2160  0.0  0.0 294100  4244 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2162  0.0  0.0 296012  4556 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2168  0.0  0.1 1165944 10244 ?       Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2171  0.0  0.0 569720  6704 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2177  0.0  0.1 456800 12444 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2181  0.0  0.2 436896 17496 ?        Sl   08:53   0:00 /usr/lib/x86_64
+mati      2202  0.0  0.0 906728  4960 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2204  0.0  0.0 286748  5004 ?        Ssl  08:53   0:00 /usr/lib/x86_64
+mati      2225  0.0  0.1 845328 11812 ?        Sl   08:53   0:00 /usr/lib/evolut
+mati      2237  0.0  0.0 178176  2680 ?        Sl   08:53   0:00 /usr/lib/dconf/
+mati      2311  0.3  1.0 1509948 83876 ?       Sl   08:53   0:35 compiz
+mati      2364  0.0  0.5 1096780 47076 ?       Sl   08:53   0:00 /usr/lib/evolut
+mati      2370  0.0  0.2 611796 19436 ?        Sl   08:53   0:00 nm-applet
+mati      2377  0.0  0.3 970596 31048 ?        Sl   08:53   0:00 nautilus -n
+mati      2385  0.0  0.0  58780  3964 ?        S    08:53   0:00 /usr/lib/x86_64
+mati      2386  0.0  0.1 411436 10596 ?        Sl   08:53   0:00 /usr/lib/unity-
+mati      2390  0.0  0.2 658372 17964 ?        Sl   08:53   0:00 /usr/lib/policy
+mati      2393  0.0  0.0 311848  6120 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+root      2399  0.0  0.0 386216  8020 ?        Sl   08:53   0:00 /usr/lib/udisks
+mati      2412  0.0  0.0 286188  5404 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2418  0.0  0.0 200476  3072 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2422  0.0  0.0 212640  3376 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2438  0.0  0.0 448280  4644 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2444  0.0  0.0 270600  3132 ?        Sl   08:53   0:00 /usr/lib/gvfs/g
+mati      2508  0.0  0.2 679592 19260 ?        Sl   08:54   0:00 /usr/lib/x86_64
+mati      2524  0.0  0.2 597372 22500 ?        Sl   08:54   0:00 /usr/bin/unity-
+mati      2525  0.0  0.1 643816  8964 ?        Sl   08:54   0:00 /usr/lib/x86_64
+mati      2540  0.0  0.0 363780  7684 ?        Sl   08:54   0:00 /usr/bin/zeitge
+mati      2550  0.0  0.1 330112 11612 ?        Sl   08:54   0:00 /usr/lib/x86_64
+mati      2552  0.0  0.1 405504 10104 ?        Sl   08:54   0:00 zeitgeist-datah
+mati      2558  0.0  0.0  11460   616 ?        S    08:54   0:00 /bin/cat
+mati      2596  0.0  0.1 458048 12860 ?        Sl   08:54   0:00 telepathy-indic
+mati      2602  0.0  0.1 336564  8100 ?        Sl   08:54   0:00 /usr/lib/telepa
+mati      2619  0.0  0.4 723712 35752 ?        Sl   08:54   0:06 gedit /home/mat
+mati      2637 12.7  8.2 1639488 662808 ?      Sl   08:54  22:18 /usr/lib/firefo
+mati      2656  0.0  0.0 287224  3956 ?        Sl   08:54   0:00 /usr/lib/libuni
+mati      2756  0.0  0.1 433284 11924 ?        Sl   08:54   0:00 update-notifier
+mati      2769  0.0  0.0 385640  4944 ?        Sl   08:55   0:00 /usr/lib/x86_64
+root      3118  0.0  0.0  77124  3928 ?        Ss   09:19   0:00 /usr/sbin/cupsd
+root      3480  0.0  0.0      0     0 ?        S<   09:33   0:00 [kworker/1:1H]
+root      3482  0.0  0.0      0     0 ?        S    09:33   0:00 [irq/43-mei_me]
+root      3530  0.0  0.0      0     0 ?        S    09:33   0:00 [kworker/1:2]
+root      3678  0.0  0.0  10232  3728 ?        S    09:33   0:00 /sbin/dhclient 
+mati      3804  0.0  0.0 124708  2916 ?        Sl   09:55   0:00 /usr/lib/gvfs/g
+mati      3923  0.0  0.4 461296 34288 ?        Sl   11:06   0:00 /usr/lib/firefo
+root      3989  0.0  0.0      0     0 ?        S    11:29   0:00 [kworker/u4:1]
+mati      4002  0.0  0.0 211384  3228 ?        Sl   11:38   0:00 /usr/lib/libreo
+mati      4019  1.2  1.3 1332160 111612 ?      Sl   11:38   0:07 /usr/lib/libreo
+root      4038  0.0  0.0      0     0 ?        S    11:39   0:00 [kworker/u4:0]
+mati      4069  0.0  0.1 350672  9076 ?        Sl   11:40   0:00 /usr/lib/x86_64
+root      4464  0.0  0.0      0     0 ?        S    11:46   0:00 [kworker/u4:2]
+mati      4530  4.2  0.2 665700 20044 ?        Rl   11:49   0:00 gnome-terminal
+mati      4539  0.0  0.0  14824   820 ?        S    11:49   0:00 gnome-pty-helpe
+mati      4540  0.5  0.0  27016  3780 pts/3    Ss   11:49   0:00 bash
+mati      4607  0.0  0.0  22752  1328 pts/3    R+   11:49   0:00 ps axu
+mati@PCI4-04:~$ 
+
+3.teoria
+4.
+mati@PCI4-04:~$ pstree -AGu
+init─┬─ModemManager───2*[{ModemManager}]
+     ├─NetworkManager─┬─dhclient
+     │                ├─dnsmasq(nobody)
+     │                └─3*[{NetworkManager}]
+     ├─accounts-daemon───2*[{accounts-daemon}]
+     ├─acpid
+     ├─avahi-daemon(avahi)───avahi-daemon
+     ├─bluetoothd
+     ├─colord(colord)───2*[{colord}]
+     ├─cron
+     ├─cups-browsed
+     ├─cupsd
+     ├─dbus-daemon(messagebus)
+     ├─6*[getty]
+     ├─gnome-keyring-d(mati)───6*[{gnome-keyring-d}]
+     ├─irqbalance
+     ├─kerneloops(kernoops)
+     ├─lightdm─┬─Xorg───2*[{Xorg}]
+     │         ├─lightdm─┬─init(mati)─┬─at-spi-bus-+
+     │         │         │            ├─at-spi2-reg+
+     │         │         │            ├─bamfdaemon
+                                                       │         │         │            ├─dbus-daemon
+     │         │         │            ├─dconf-servi+
+     │         │         │            ├─evolution-c+
+     │         │         │            ├─evolution-s+
+     │         │         │            ├─firefox+
+     │         │         │            │         +
+     │         │         │            ├─gconfd-2
+     │         │         │            ├─gedit──+
+     │         │         │            ├─gnome-sessi+
+     │         │         │            ├─gnome-termi+
+     │         │         │            ├─gvfs-afc-vo+
+     │         │         │            ├─gvfs-gphoto+
+     │         │         │            ├─gvfs-mtp-vo+
+     │         │         │            ├─gvfs-udisks+
+     │         │         │            ├─gvfsd──+
+     │         │         │            ├─gvfsd-burn
+                                                       │         │         │            ├─gvfsd-fuse
+                         │         │         │            ├─gvfsd-metad+
+     │         │         │            ├─gvfsd-trash+
+     │         │         │            ├─hud-service+
+     │         │         │            ├─ibus-daemon+
+     │         │         │            ├─ibus-x11+
+     │         │         │            ├─indicator-a+
+     │         │         │            ├─indicator-b+
+     │         │         │            ├─indicator-d+
+     │         │         │            ├─indicator-k+
+     │         │         │            ├─indicator-m+
+     │         │         │            ├─indicator-p+
+     │         │         │            ├─indicator-p+
+     │         │         │            ├─indicator-s+
+     │         │         │            ├─indicator-s+
+     │         │         │            ├─mission-con+
+     │         │         │            ├─notify-osd
+                                                       │         │         │            ├─oosplash+
+     │         │         │            │          
+     │         │         │            ├─pulseaudio
+                                                       │         │         │            ├─ssh-agent
+     │         │         │            ├─unity-files+
+     │         │         │            ├─unity-music+
+     │         │         │            ├─unity-panel+
+     │         │         │            ├─unity-scope+
+     │         │         │            ├─unity-scope+
+     │         │         │            ├─unity-setti+
+     │         │         │            ├─unity-webap+
+     │         │         │            ├─2*[upstart-+
+     │         │         │            ├─upstart-eve+
+     │         │         │            ├─upstart-fil+
+     │         │         │            ├─window-stac+
+     │         │         │            ├─zeitgeist-d+
+     │         │         │            ├─zeitgeist-d+
+     │         │         │            └─zeitgeist-f+
+     │         │         └─{lightdm}
+     │         └─2*[{lightdm}]
+     ├─mysqld(mysql)───17*[{mysqld}]
+     ├─polkitd───2*[{polkitd}]
+     ├─rsyslogd(syslog)───3*[{rsyslogd}]
+     ├─rtkit-daemon(rtkit)───2*[{rtkit-daemon}]
+     ├─sshd
+     ├─systemd-logind
+     ├─systemd-udevd
+     ├─udisksd───4*[{udisksd}]
+     ├─upowerd───2*[{upowerd}]
+     ├─upstart-file-br
+     ├─upstart-socket-
+     ├─upstart-udev-br
+     └─whoopsie(whoopsie)───2*[{whoopsie}]
+mati@PCI4-04:~$ 
+
+5.foto
+6.foto
+7.teoria
+8. nice devuelve 0
+9. no me deja ejecutar porque no hay permisos
+10.mirar en internet
+11.
+14 . internet
+15.internet
+16.internet
+
+
